@@ -1,0 +1,36 @@
+section fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 700;
+  padding: 32px;
+}
+
+section fieldset h1 {
+  font-size: 1.5rem;
+}
+
+section fieldset label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+}
+
+section fieldset label span:nth-of-type(2) {
+  font-size: 0.7rem;
+  color: var(--gray);
+}
+
+section fieldset input {
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+
+section fieldset input:focus {
+  border: 2px solid var(--blue);
+  transition: border 0.5s;
+}
