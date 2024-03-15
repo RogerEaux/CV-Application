@@ -1,11 +1,13 @@
+.editables section {
+  padding: 32px;
+}
+
 section fieldset {
   border: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
   font-weight: 700;
-  padding: 32px;
-  padding-bottom: 0;
 }
 
 section fieldset h1 {
