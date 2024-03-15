@@ -5,6 +5,7 @@ section fieldset {
   gap: 16px;
   font-weight: 700;
   padding: 32px;
+  padding-bottom: 0;
 }
 
 section fieldset h1 {
