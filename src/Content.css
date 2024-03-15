@@ -26,7 +26,7 @@ section fieldset label span:nth-of-type(2) {
 section fieldset input {
   padding: 8px;
   border: 2px solid transparent;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
 }
 
