@@ -13,8 +13,8 @@ function Education({ education, editedID, handlers }) {
           />
           <Buttons
             handlers={{
-              handleDeleteStudy: handlers.handleDeleteStudy,
-              handleExitStudy: handlers.handleExitStudy,
+              handleDelete: handlers.handleDelete,
+              handleExit: handlers.handleExit,
             }}
           />
         </>
@@ -23,13 +23,13 @@ function Education({ education, editedID, handlers }) {
           <ul>
             {education.map((study) => {
               return (
-                <li key={study.id} onClick={handlers.handleEditStudy}>
+                <li key={study.id} onClick={handlers.handleEdit}>
                   <p data-id={study.id}>{study.school}</p>
                 </li>
               );
             })}
           </ul>
-          <button className="add-button" onClick={handlers.handleAddStudy}>
+          <button className="add-button" onClick={handlers.handleAdd}>
             + Add Study
           </button>
         </>

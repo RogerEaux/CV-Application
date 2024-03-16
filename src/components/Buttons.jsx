@@ -1,8 +1,8 @@
 function Buttons({ handlers }) {
   return (
     <div className="buttons">
-      <button onClick={handlers.handleDeleteStudy}>Delete</button>
-      <button onClick={handlers.handleExitStudy}>Confirm</button>
+      <button onClick={handlers.handleDelete}>Delete</button>
+      <button onClick={handlers.handleExit}>Confirm</button>
     </div>
   );
 }
