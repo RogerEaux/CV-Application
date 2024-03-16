@@ -59,7 +59,7 @@ fieldset li {
   justify-content: space-between;
 }
 
-.buttons button {
+button {
   padding: 8px 16px;
   border: none;
   border-radius: 10px;
@@ -73,11 +73,11 @@ fieldset li {
 }
 
 .buttons :nth-child(2) {
-  background-color: var(--blue);
+  background-color: green;
 }
 
-.buttons :nth-child(3) {
-  background-color: green;
+.add-button {
+  background-color: var(--blue);
 }
 
 .date {

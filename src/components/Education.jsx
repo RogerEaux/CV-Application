@@ -19,15 +19,20 @@ function Education({ education, editedID, handlers }) {
           />
         </>
       ) : (
-        <ul>
-          {education.map((study) => {
-            return (
-              <li key={study.id} onClick={handlers.handleEditStudy}>
-                <p data-id={study.id}>{study.school}</p>
-              </li>
-            );
-          })}
-        </ul>
+        <>
+          <ul>
+            {education.map((study) => {
+              return (
+                <li key={study.id} onClick={handlers.handleEditStudy}>
+                  <p data-id={study.id}>{study.school}</p>
+                </li>
+              );
+            })}
+          </ul>
+          <button className="add-button" onClick={handlers.handleAddStudy}>
+            + Add Study
+          </button>
+        </>
       )}
     </fieldset>
   );
