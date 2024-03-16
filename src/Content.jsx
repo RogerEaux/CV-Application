@@ -84,29 +84,27 @@ function Content() {
   return (
     <>
       <section className="editables">
-        <form action="">
-          <GeneralInfo
-            general={general}
-            handlers={{
-              handleNameChange: handleNameChange,
-              handleEmailChange: handleEmailChange,
-              handlePhoneChange: handlePhoneChange,
-              handleAddressChange: handleAddressChange,
-            }}
-          />
-          <Education
-            education={education}
-            editedID={educationEditedID}
-            handlers={{
-              handleEditStudy: handleEditStudy,
-              handleSchoolChange: handleSchoolChange,
-              handleDegreeChange: handleDegreeChange,
-              handleDateFromChange: handleDateFromChange,
-              handleDateToChange: handleDateToChange,
-              handleLocationChange: handleStudyLocationChange,
-            }}
-          />
-        </form>
+        <GeneralInfo
+          general={general}
+          handlers={{
+            handleNameChange: handleNameChange,
+            handleEmailChange: handleEmailChange,
+            handlePhoneChange: handlePhoneChange,
+            handleAddressChange: handleAddressChange,
+          }}
+        />
+        <Education
+          education={education}
+          editedID={educationEditedID}
+          handlers={{
+            handleEditStudy: handleEditStudy,
+            handleSchoolChange: handleSchoolChange,
+            handleDegreeChange: handleDegreeChange,
+            handleDateFromChange: handleDateFromChange,
+            handleDateToChange: handleDateToChange,
+            handleLocationChange: handleStudyLocationChange,
+          }}
+        />
       </section>
       <section className="displayable">
         <Curriculum general={general} education={education} />
