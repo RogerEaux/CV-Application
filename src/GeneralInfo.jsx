@@ -5,7 +5,7 @@ function GeneralInfo({
   handleAddressChange,
 }) {
   return (
-    <fieldset className="general-info">
+    <fieldset>
       <h1>General Information</h1>
       <label htmlFor="name">
         <div>

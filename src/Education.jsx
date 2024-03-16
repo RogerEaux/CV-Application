@@ -3,12 +3,10 @@ import './Education.css';
 
 function Education() {
   return (
-    <section className="education">
-      <fieldset>
-        <h1>Education</h1>
-        <Study />
-      </fieldset>
-    </section>
+    <fieldset>
+      <h1>Education</h1>
+      <Study />
+    </fieldset>
   );
 }
 
