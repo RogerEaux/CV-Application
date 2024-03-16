@@ -1,8 +1,8 @@
-.editables section {
-  padding: 32px;
+section {
+  margin: 32px;
 }
 
-section fieldset {
+fieldset {
   border: none;
   display: flex;
   flex-direction: column;
@@ -10,30 +10,37 @@ section fieldset {
   font-weight: 700;
 }
 
-section fieldset h1 {
+fieldset h1 {
   font-size: 1.5rem;
 }
 
-section fieldset label {
+fieldset label {
   display: flex;
   flex-direction: column;
   gap: 8px;
   font-weight: 600;
 }
 
-section fieldset label span:nth-of-type(2) {
+fieldset label span:nth-of-type(2) {
   font-size: 0.7rem;
   color: var(--gray);
 }
 
-section fieldset input {
+fieldset input {
   padding: 8px;
   border: 2px solid transparent;
   border-radius: 10px;
   outline: none;
 }
 
-section fieldset input:focus {
+fieldset input:focus {
   border: 2px solid var(--blue);
   transition: border 0.5s;
+}
+
+.displayable {
+  align-self: center;
+  height: 29.7cm;
+  width: 21cm;
+  box-shadow: 0 0 8px var(--gray);
 }
