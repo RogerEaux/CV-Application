@@ -1,3 +1,4 @@
+import Buttons from './Buttons';
 import Study from './Study';
 
 function Education({ education, editedID, handlers }) {
@@ -5,10 +6,18 @@ function Education({ education, editedID, handlers }) {
     <fieldset>
       <h1>Education</h1>
       {editedID ? (
-        <Study
-          study={education.find((ed) => ed.id === editedID)}
-          handlers={handlers}
-        />
+        <>
+          <Study
+            study={education.find((ed) => ed.id === editedID)}
+            handlers={handlers}
+          />
+          <Buttons
+            handlers={{
+              handleDeleteStudy: handlers.handleDeleteStudy,
+              handleExitStudy: handlers.handleExitStudy,
+            }}
+          />
+        </>
       ) : (
         <ul>
           {education.map((study) => {
