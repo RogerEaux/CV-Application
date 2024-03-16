@@ -43,7 +43,7 @@ function Study({ study, handlers }) {
       </div>
       <label htmlFor="study-location">
         <div>
-          <span>Location</span> <span>optional</span>
+          <span>Location</span> <span>recommended</span>
         </div>
         <input
           type="text"
