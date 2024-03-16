@@ -1,9 +1,4 @@
-function GeneralInfo({
-  handleNameChange,
-  handleEmailChange,
-  handlePhoneChange,
-  handleAddressChange,
-}) {
+function GeneralInfo({ general, handlers }) {
   return (
     <fieldset>
       <h1>General Information</h1>
@@ -16,7 +11,8 @@ function GeneralInfo({
           id="name"
           placeholder="First and last name"
           required
-          onChange={handleNameChange}
+          onChange={handlers.handleNameChange}
+          value={general.name}
         />
       </label>
       <label htmlFor="email">
@@ -27,7 +23,8 @@ function GeneralInfo({
           type="email"
           id="email"
           placeholder="ex. email@email.com"
-          onChange={handleEmailChange}
+          onChange={handlers.handleEmailChange}
+          value={general.email}
         />
       </label>
       <label htmlFor="phone">
@@ -38,7 +35,8 @@ function GeneralInfo({
           type="tel"
           id="phone"
           placeholder="10 digits phone number"
-          onChange={handlePhoneChange}
+          onChange={handlers.handlePhoneChange}
+          value={general.phone}
         />
       </label>
       <label htmlFor="address">
@@ -49,7 +47,8 @@ function GeneralInfo({
           type="text"
           id="address"
           placeholder="City, Country"
-          onChange={handleAddressChange}
+          onChange={handlers.handleAddressChange}
+          value={general.address}
         />
       </label>
     </fieldset>
