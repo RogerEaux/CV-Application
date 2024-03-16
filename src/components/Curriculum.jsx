@@ -36,12 +36,13 @@ function Curriculum({ general, education }) {
             return (
               <li key={study.id}>
                 <h2>{study.school}</h2>
-                <h3>{study.degree}</h3>
-                <div className="date">
-                  <p>{study.dateFrom}</p>
-                  <p>{study.dateTo}</p>
+                <div className="study-details">
+                  <h3>{study.degree}</h3>
+                  <p>
+                    <span>{study.dateFrom}</span> - <span>{study.dateTo}</span>
+                  </p>
                 </div>
-                {study.location ? <p>{study.location}</p> : null}
+                {study.location ? <h3>{study.location}</h3> : null}
               </li>
             );
           })}
