@@ -1,7 +1,7 @@
-import './Curriculum.css';
-import emailImage from './assets/email.svg';
-import phoneImage from './assets/phone.svg';
-import addressImage from './assets/address.svg';
+import emailImage from '../assets/email.svg';
+import phoneImage from '../assets/phone.svg';
+import addressImage from '../assets/address.svg';
+import '../styles/Curriculum.css';
 
 function Curriculum({ general, education }) {
   return (

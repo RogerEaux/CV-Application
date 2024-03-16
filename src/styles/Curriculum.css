@@ -30,3 +30,8 @@
   width: 24px;
   height: auto;
 }
+
+.date {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

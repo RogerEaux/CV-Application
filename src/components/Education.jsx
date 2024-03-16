@@ -1,5 +1,4 @@
 import Study from './Study';
-import './Education.css';
 
 function Education({ education, editedID, handlers }) {
   return (
