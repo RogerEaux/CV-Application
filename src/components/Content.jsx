@@ -31,7 +31,7 @@ function Content() {
       dateTo: '2024-03-15',
       responsibilities:
         'As a cheese analyst, my main responsibilities include but are not limited \
-        to cheese consistency analysis cheese tasting and cheese quality control',
+to cheese consistency analysis cheese tasting and cheese quality control',
     },
   ];
   const [general, setGeneral] = useState(initialGeneral);
