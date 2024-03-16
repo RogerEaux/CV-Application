@@ -30,26 +30,36 @@
   height: auto;
 }
 
-.education {
+.education,
+.experience {
   padding: 64px;
+  padding-bottom: 0;
 }
 
-.education h1 {
+.education h1,
+.experience h1 {
   font-size: 2rem;
   margin-bottom: 32px;
 }
 
-.education ul {
+.education ul,
+.experience ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.education h2 {
+.education h2,
+.experience h2 {
   font-size: 1.4rem;
 }
 
-.study-details {
+.study-details,
+.work-details {
   display: flex;
   justify-content: space-between;
+}
+
+.experience li > p {
+  margin-top: 8px;
 }
