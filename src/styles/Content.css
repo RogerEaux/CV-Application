@@ -31,16 +31,24 @@ fieldset label span:nth-of-type(2) {
   color: var(--gray);
 }
 
-fieldset input {
+fieldset input,
+fieldset textarea {
   padding: 8px;
   border: 2px solid transparent;
   border-radius: 10px;
   outline: none;
+  font-family: inherit;
 }
 
-fieldset input:focus {
+fieldset input:focus,
+fieldset textarea:focus {
   border: 2px solid var(--blue);
   transition: border 0.5s;
+}
+
+fieldset textarea {
+  height: 100px;
+  resize: vertical;
 }
 
 fieldset ul {
