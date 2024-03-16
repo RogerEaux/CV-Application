@@ -3,7 +3,7 @@ import phoneImage from '../assets/phone.svg';
 import addressImage from '../assets/address.svg';
 import '../styles/Curriculum.css';
 
-function Curriculum({ general, education }) {
+function Curriculum({ general, education, experience }) {
   return (
     <>
       <div className="general-info">
@@ -43,6 +43,25 @@ function Curriculum({ general, education }) {
                   </p>
                 </div>
                 {study.location ? <h3>{study.location}</h3> : null}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div className="experience">
+        <h1>Experience</h1>
+        <ul>
+          {experience.map((work) => {
+            return (
+              <li key={work.id}>
+                <h2>{work.company}</h2>
+                <div className="work-details">
+                  <h3>{work.position}</h3>
+                  <p>
+                    <span>{work.dateFrom}</span> - <span>{work.dateTo}</span>
+                  </p>
+                </div>
+                {work.responsibilities ? <p>{work.responsibilities}</p> : null}
               </li>
             );
           })}
