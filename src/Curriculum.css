@@ -1,0 +1,32 @@
+.general-info {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+  padding: 32px;
+  color: white;
+}
+
+.general-info > :first-child {
+  align-self: center;
+  text-align: center;
+  font-size: 3rem;
+  padding: 32px 0;
+}
+
+.not-names {
+  display: flex;
+  justify-content: space-around;
+  padding: 32px 0;
+  font-size: 1.25rem;
+}
+
+.not-names > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.not-names > div > img {
+  width: 24px;
+  height: auto;
+}
