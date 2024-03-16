@@ -94,8 +94,7 @@ button {
 }
 
 .displayables {
-  align-self: center;
-  height: 29.7cm;
+  min-height: 29.7cm;
   width: 21cm;
   box-shadow: 0 0 8px var(--gray);
   word-wrap: break-word;

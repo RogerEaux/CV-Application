@@ -36,6 +36,10 @@
   padding-bottom: 0;
 }
 
+.displayables > :last-child {
+  padding-bottom: 64px;
+}
+
 .education h1,
 .experience h1 {
   font-size: 2rem;
