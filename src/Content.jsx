@@ -22,9 +22,9 @@ function Content() {
     },
   ];
   const [general, setGeneral] = useState(initialGeneral);
-  // const [educationID, setEducationID] = useState(2);
   const [education, setEducation] = useState(initialEducation);
   const [educationEditedID, setEducationEditedID] = useState(null);
+  // const [educationID, setEducationID] = useState(2);
 
   function handleNameChange(e) {
     setGeneral({ ...general, name: e.target.value });
@@ -47,53 +47,38 @@ function Content() {
   }
 
   function handleSchoolChange(e) {
-    setEducation([
-      ...education.filter((study) => !study.id === educationEditedID),
-      {
-        ...education.find((study) => study.id === educationEditedID),
-        school: e.target.value,
-      },
-    ]);
+    const oldStudy = education.find((study) => study.id === educationEditedID);
+    const newStudy = { ...oldStudy, school: e.target.value };
+
+    setEducation(education.toSpliced(education.indexOf(oldStudy), 1, newStudy));
   }
 
   function handleDegreeChange(e) {
-    setEducation([
-      ...education.filter((study) => !study.id === educationEditedID),
-      {
-        ...education.find((study) => study.id === educationEditedID),
-        degree: e.target.value,
-      },
-    ]);
+    const oldStudy = education.find((study) => study.id === educationEditedID);
+    const newStudy = { ...oldStudy, degree: e.target.value };
+
+    setEducation(education.toSpliced(education.indexOf(oldStudy), 1, newStudy));
   }
 
   function handleDateFromChange(e) {
-    setEducation([
-      ...education.filter((study) => !study.id === educationEditedID),
-      {
-        ...education.find((study) => study.id === educationEditedID),
-        dateFrom: e.target.value,
-      },
-    ]);
+    const oldStudy = education.find((study) => study.id === educationEditedID);
+    const newStudy = { ...oldStudy, dateFrom: e.target.value };
+
+    setEducation(education.toSpliced(education.indexOf(oldStudy), 1, newStudy));
   }
 
   function handleDateToChange(e) {
-    setEducation([
-      ...education.filter((study) => !study.id === educationEditedID),
-      {
-        ...education.find((study) => study.id === educationEditedID),
-        dateTo: e.target.value,
-      },
-    ]);
+    const oldStudy = education.find((study) => study.id === educationEditedID);
+    const newStudy = { ...oldStudy, dateTo: e.target.value };
+
+    setEducation(education.toSpliced(education.indexOf(oldStudy), 1, newStudy));
   }
 
   function handleStudyLocationChange(e) {
-    setEducation([
-      ...education.filter((study) => !study.id === educationEditedID),
-      {
-        ...education.find((study) => study.id === educationEditedID),
-        location: e.target.value,
-      },
-    ]);
+    const oldStudy = education.find((study) => study.id === educationEditedID);
+    const newStudy = { ...oldStudy, location: e.target.value };
+
+    setEducation(education.toSpliced(education.indexOf(oldStudy), 1, newStudy));
   }
 
   return (
