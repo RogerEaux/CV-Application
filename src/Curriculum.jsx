@@ -3,7 +3,7 @@ import emailImage from './assets/email.svg';
 import phoneImage from './assets/phone.svg';
 import addressImage from './assets/address.svg';
 
-function Curriculum({ general }) {
+function Curriculum({ general, education }) {
   return (
     <>
       <div className="general-info">
@@ -28,6 +28,24 @@ function Curriculum({ general }) {
             </div>
           ) : null}
         </div>
+      </div>
+      <div className="education">
+        <h1>Education</h1>
+        <ul>
+          {education.map((study) => {
+            return (
+              <li key={study.id}>
+                <h2>{study.school}</h2>
+                <h3>{study.degree}</h3>
+                <div className="date">
+                  <p>{study.dateFrom}</p>
+                  <p>{study.dateTo}</p>
+                </div>
+                {study.location ? <p>{study.location}</p> : null}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </>
   );
