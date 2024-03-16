@@ -20,6 +20,14 @@ function Content() {
       dateTo: '2024-03-15',
       location: 'CheeseLand',
     },
+    {
+      id: 2,
+      school: 'University of Cake',
+      degree: 'Dumpy Studies',
+      dateFrom: '2020-03-15',
+      dateTo: '2024-03-15',
+      location: 'BootyCity',
+    },
   ];
   const [general, setGeneral] = useState(initialGeneral);
   const [education, setEducation] = useState(initialEducation);
@@ -44,6 +52,15 @@ function Content() {
 
   function handleEditStudy(e) {
     setEducationEditID(parseInt(e.target.dataset.id));
+  }
+
+  function handleExitStudy() {
+    setEducationEditID(null);
+  }
+
+  function handleDeleteStudy() {
+    setEducation(education.filter((study) => study.id !== educationEditID));
+    handleExitStudy();
   }
 
   function handleSchoolChange(e) {
@@ -103,6 +120,8 @@ function Content() {
             handleDateFromChange: handleDateFromChange,
             handleDateToChange: handleDateToChange,
             handleLocationChange: handleStudyLocationChange,
+            handleDeleteStudy: handleDeleteStudy,
+            handleExitStudy: handleExitStudy,
           }}
         />
       </section>
