@@ -134,7 +134,7 @@ function Content() {
           }}
         />
       </section>
-      <section className="displayable">
+      <section className="displayables">
         <Curriculum general={general} education={education} />
       </section>
     </>

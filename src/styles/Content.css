@@ -85,7 +85,7 @@ button {
   grid-template-columns: 1fr 1fr;
 }
 
-.displayable {
+.displayables {
   align-self: center;
   height: 29.7cm;
   width: 21cm;
