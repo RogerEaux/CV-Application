@@ -2,9 +2,7 @@ function Study({ study, handlers }) {
   return (
     <>
       <label htmlFor="school">
-        <div>
-          <span>School</span>
-        </div>
+        <span>School</span>
         <input
           type="text"
           placeholder="School of study"
@@ -14,9 +12,7 @@ function Study({ study, handlers }) {
         />
       </label>
       <label htmlFor="degree">
-        <div>
-          <span>Degree/Title</span>
-        </div>
+        <span>Degree/Title</span>
         <input
           type="text"
           placeholder="Degree/Title of study"
@@ -27,9 +23,7 @@ function Study({ study, handlers }) {
       </label>
       <div className="date">
         <label htmlFor="date-from">
-          <div>
-            <span>From</span>
-          </div>
+          <span>From</span>
           <input
             type="date"
             id="date-from"
@@ -38,9 +32,7 @@ function Study({ study, handlers }) {
           />
         </label>
         <label htmlFor="date-to">
-          <div>
-            <span>To </span>
-          </div>
+          <span>To</span>
           <input
             type="date"
             id="date-to"
